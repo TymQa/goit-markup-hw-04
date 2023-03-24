@@ -152,6 +152,10 @@ span {
     
     background-repeat: no-repeat;
     background-position: center;
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
 }
 
 .order-title {
@@ -205,7 +209,7 @@ span {
 }
 
 .features-item {
-    max-width: 264px;
+    max-width: calc((100% - 72px) / 4);
 }
 
 .features-item:not(:last-child) {
@@ -238,8 +242,6 @@ span {
     justify-content: center;
     align-items: center;
     
-
-    width: 264px;
     height: 112px;
     background-color: var(--color-cloud);
     border-radius: 4px;
@@ -361,6 +363,10 @@ border-radius: 0px 0px 4px 4px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--color-iris);
+}
+
+.team-icon-link:is(:hover, :focus) {
+    background-color: var(--color-background-btn);
 }
 
 .link-icon {
